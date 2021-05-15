@@ -17,6 +17,9 @@ app.use(cors());
 app.use(express.json());
 
 // Define Routes
+app.get('/', function (req, res) {
+  res.send('Data API');
+});
 app.use('/api/audience', require('./routes/getUpdate'));
 app.use('/api/contact', require('./routes/contact'));
 
