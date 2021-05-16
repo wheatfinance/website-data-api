@@ -40,7 +40,7 @@ router.post(
 		</ul>
 
 	  `;
-      sendEmail(email, from, subject, output);
+      sendEmail(from, from, subject, output);
 
       return res.status(200).json('Message sent');
     } catch (err) {
